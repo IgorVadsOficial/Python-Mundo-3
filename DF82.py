@@ -7,17 +7,17 @@ while True:
     if valor % 2 == 0:
         pares.append(valor)
         numeros.append(valor)
-    else: 
+    else:
         impares.append(valor)
         numeros.append(valor)
-    continuar = str(input("Quer continuar? [S/N] ")).strip().upper() [0]
+    continuar = str(input("Quer continuar? [S/N] ")).strip().upper()[0]
     if continuar == "S":
         continue
     elif continuar == "N":
         break
     else:
-        while continuar not in ["S","N"]:
-            continuar = str(input("Quer continuar? [S/N] ")).strip().upper() [0]
+        while continuar not in ["S", "N"]:
+            continuar = str(input("Quer continuar? [S/N] ")).strip().upper()[0]
             if continuar == "S":
                 continue
             elif continuar == "N":

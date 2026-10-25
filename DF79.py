@@ -5,16 +5,16 @@ while True:
     if valor not in numeros:
         numeros.append(valor)
         print("Valor adicionado com sucesso...")
-    else: 
+    else:
         print("Valor duplicado, Não vou adicionar...")
-    continuar = str(input("Quer continuar? [S/N] ")).strip().upper() [0]
+    continuar = str(input("Quer continuar? [S/N] ")).strip().upper()[0]
     if continuar == "S":
         continue
     elif continuar == "N":
         break
     else:
-        while continuar not in ["S","N"]:
-            continuar = str(input("Quer continuar? [S/N] ")).strip().upper() [0]
+        while continuar not in ["S", "N"]:
+            continuar = str(input("Quer continuar? [S/N] ")).strip().upper()[0]
             if continuar == "S":
                 continue
             elif continuar == "N":

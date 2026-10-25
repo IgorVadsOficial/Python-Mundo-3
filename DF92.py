@@ -10,8 +10,10 @@ if funcionario["ctps"] == 0:
 else:
     funcionario["contratação"] = int(input("Ano de Contratação: "))
     funcionario["salario"] = float(input("Salário: R$"))
-    funcionario["aposentadoria"] = ((funcionario["contratação"] + 35) - datetime.now().year) + funcionario["idade"] 
+    funcionario["aposentadoria"] = (
+        (funcionario["contratação"] + 35) - datetime.now().year
+    ) + funcionario["idade"]
 
 print("-=" * 30)
-for k,v in funcionario.items():
+for k, v in funcionario.items():
     print(f"{k} tem valor: {v}")

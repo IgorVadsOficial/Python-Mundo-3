@@ -1,6 +1,6 @@
 aluno = dict()
-aluno['nome'] = str(input("Nome: ")).capitalize().strip()
-aluno['media'] = float(input("Media: "))
+aluno["nome"] = str(input("Nome: ")).capitalize().strip()
+aluno["media"] = float(input("Media: "))
 
 print("-=" * 30)
 print(f"- Nome do aluno é igual a {aluno["nome"]}")
