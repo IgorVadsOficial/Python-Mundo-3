@@ -25,9 +25,7 @@ while True:
         continue
     else:
         while continuar not in ["S", "N"]:
-            continuar = (
-                str(input("Por favor, digite apenas Sim ou Não! ")).strip().upper()[0]
-            )
+            continuar = (str(input("Por favor, digite apenas Sim ou Não! ")).strip().upper()[0])
 
 print("-=" * 30)
 print(f"A) Ao todo temos {len(pessoas)} pessoas cadastradas.")
