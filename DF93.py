@@ -22,7 +22,7 @@ print("-=" * 30)
 
 for k, v in jogador.items():
     print(f"o campo {k} tem o valor {v}")
-    
+
 print("-=" * 30)
 
 print(f"O jogador {jogador["nome"]} jogou {jogos} partidas.")
