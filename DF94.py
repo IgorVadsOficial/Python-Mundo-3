@@ -1,7 +1,6 @@
 pessoas = []
 mulheres = []
 soma_idade = 0
-cont = 0
 
 while True:
     Continuar = "S"
@@ -16,8 +15,7 @@ while True:
     dados["idade"] = idade
     continuar = str(input("Quer continuar? [S/N] ")).strip().upper()[0]
     soma_idade = soma_idade + idade
-    cont += 1
-    media = soma_idade / cont
+    media = soma_idade / len(pessoas)
     pessoas.append(dados)
     if sexo == "F":
         mulheres.append(nome)
@@ -32,11 +30,11 @@ while True:
             )
 
 print("-=" * 30)
-print(f"A) Ao todo temos {cont} pessoas cadastradas.")
+print(f"A) Ao todo temos {len(pessoas)} pessoas cadastradas.")
 print(f"B) A média de idade foi de {media:.2f} anos.")
 mulheres = sorted(mulheres)
 for mulher in mulheres:
-    print(f"C) As mulheres cadastradas foram {' '.join(mulheres)}" )
+    print(f"C) As mulheres cadastradas foram {' '.join(mulheres)}")
 print("D) Lista das pessoas que estão acima da média: ")
 for pessoa in pessoas:
     if pessoa["idade"] > media:
