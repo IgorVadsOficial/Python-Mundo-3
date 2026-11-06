@@ -1,4 +1,3 @@
-# valores = [int(input(f"Digite o 1° valor: ")),int(input(f"Digite o 2° valor: ")),int(input(f"Digite o 3° valor: ")),int(input(f"Digite o 4° valor: ")),int(input(f"Digite o 5° valor: "))]
 valores = []
 maior = menor = 0
 pos_final_maior = pos_final_menor = 0
